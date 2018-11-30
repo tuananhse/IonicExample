@@ -1,6 +1,8 @@
 {
   "name": "demotab",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "e611dd23"
 }

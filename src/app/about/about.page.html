@@ -4,4 +4,32 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+<ion-row>
+  <ion-col>
+    <button ion-button class="button" full (click)="onCapture()" >Capture</button>
+  </ion-col>
+  <ion-col>
+      <button ion-button class="button" full (click)="onVideo()" >Video</button>
+    </ion-col>
+
+</ion-row>
+<ion-text color="dark">
+  <h5>{{path}}</h5>
+</ion-text>
+
+    <!-- <ion-img class="imgStyle"  src="{{images}}"></ion-img> -->
+    <!-- <img src={{path}} style="width: 60%" [hidden]="lastImage === null" *ngIf="base64Image"> -->
+    <!-- <ion-img [src]="images"></ion-img> -->
+    <ion-img [src]="path" [hidden]="lastImage === null"></ion-img>
+
+  </ion-content>
+<ion-footer >
+
+    <ion-item class="buttonSize">
+        <button item-center default class="button">
+          Upload
+        </button>
+      </ion-item>    
+      </ion-footer>
+
